@@ -1,31 +1,22 @@
 import { registerApplication, start } from 'single-spa'
 
 registerApplication(
-  // Name of our single-spa application
-  'react',
-  // Our loading function
-  () => import('./src/react/react.app.js'),
-  // Our activity function
-  () => location.pathname === "" ||
-    location.pathname === "/" ||
-    location.pathname.startsWith('/react')
-)
-registerApplication(
-  // Name of our single-spa application
-  'vueapp',
-  // Our loading function
-  () => import('./src/vueapp/vueapp.app.js'),
-  pathPrefix('/vueapp')
+  'app1',
+  () => import('./src/app1/vueapp.app.js'),
+  pathPrefix('/app1')
 )
 
+registerApplication(
+  'app2',
+  () => import('./src/app2/vueapp.app.js'),
+  pathPrefix('/app2')
+)
 
 registerApplication(
-  'navigation',
-  () => import('./src/navigation/navigation.app.js').
-    then(module => module.navigation),
+  'app',
+  () => import('./src/frame/vueapp.app.js'),
   () => true
 )
-
 
 function pathPrefix(prefix) {
   return function (location) {

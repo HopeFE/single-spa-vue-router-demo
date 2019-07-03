@@ -5,13 +5,13 @@ import router from './router'
 import store from './store'
 
 function domElementGetter() {
-  return document.getElementById("vueapp")
+  return document.getElementById("app1")
 }
 const vueLifecycles = singleSpaVue({
   Vue,
   domElementGetter,
   appOptions: {
-    el: '#vueapp',
+    el: '#app1',
     router,
     store,
     render: r => r(App)
