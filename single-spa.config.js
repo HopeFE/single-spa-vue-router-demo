@@ -1,18 +1,18 @@
-import { registerApplication, start } from 'single-spa'
+import * as spa from 'single-spa'
 
-registerApplication(
+spa.registerApplication(
   'app1',
   () => import('./src/app1/vueapp.app.js'),
   pathPrefix('/app1')
 )
 
-registerApplication(
+spa.registerApplication(
   'app2',
   () => import('./src/app2/vueapp.app.js'),
   pathPrefix('/app2')
 )
 
-registerApplication(
+spa.registerApplication(
   'app',
   () => import('./src/frame/vueapp.app.js'),
   () => true
@@ -24,4 +24,4 @@ function pathPrefix(prefix) {
   }
 }
 
-start()
+spa.start()

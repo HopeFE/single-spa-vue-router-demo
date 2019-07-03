@@ -3,12 +3,21 @@
     <header class="navbar">
       <img src="https://devstatic.ymm56.com/major-client/static/img/icon_header_logo.90961eb5.png" class="logo" />
     </header>
+    <sidebar/>
   </div>
 </template>
 
 <script>
+import { navigateToUrl } from "single-spa";
+import Sidebar from "./components/sidebar.vue"
 export default {
-  name: 'Layout'
+  name: 'Layout',
+  components: { Sidebar },
+  methods: {
+    goto (url) {
+      navigateToUrl(url)
+    }
+  }
 }
 </script>
 

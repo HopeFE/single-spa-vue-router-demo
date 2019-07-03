@@ -2,9 +2,12 @@ import Vue from 'vue'
 import singleSpaVue from 'single-spa-vue'
 import App from './App.vue'
 import store from './store'
+import Element from 'element-ui'
+
+Vue.use(Element)
 
 function domElementGetter() {
-  return document.getElementById("app")
+  return document.getElementById('app')
 }
 
 const vueLifecycles = singleSpaVue({
@@ -18,13 +21,13 @@ const vueLifecycles = singleSpaVue({
 })
 
 export const bootstrap = [
-  vueLifecycles.bootstrap,
+  vueLifecycles.bootstrap
 ]
 
 export const mount = [
-  vueLifecycles.mount,
+  vueLifecycles.mount
 ]
 
 export const unmount = [
-  vueLifecycles.unmount,
+  vueLifecycles.unmount
 ]

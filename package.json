@@ -6,20 +6,31 @@
   "author": "Philisiah Mwaluma",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.2",
+    "element-ui": "^2.8.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
     "single-spa": "^4.3.4",
     "single-spa-vue": "^1.4.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
+    "@babel/runtime-corejs2": "^7.4.5",
+    "@vue/babel-preset-app": "^3.8.0",
+    "@vue/eslint-config-standard": "^4.0.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.0.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-vue": "^5.0.0",
     "html-loader": "^0.5.5",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
@@ -33,6 +44,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack --config webpack.config.js -p"
+    "build": "webpack --config webpack.config.js -p",
+    "dll": "webpack --config build/webpack.dll.config.js"
   }
 }

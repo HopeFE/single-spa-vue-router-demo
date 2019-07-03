@@ -45,17 +45,20 @@ module.exports = {
     fs: 'empty'
   },
   resolve: {
-    alias: {
-      vue: 'vue/dist/vue.js'
-    },
     modules: [path.resolve(__dirname, 'node_modules')],
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new webpack.DllReferencePlugin({
+      context: __dirname,
+      manifest: require('./public/dll/vendor-manifest.json')
+    })
   ],
   devtool: 'source-map',
-  externals: [],
+  externals: {
+    'vue': 'Vue',
+  },
   devServer: {
     historyApiFallback: true
   }
