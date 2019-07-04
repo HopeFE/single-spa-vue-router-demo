@@ -7,8 +7,6 @@
 
 ## 还未解决问题
 1. 同步store
-2. 
-3. 子项目依然使用vue-cli打包，主体项目使用webpack
 
 ## 使用前必读
 1. 技术栈vue + vue-router + vuex, axios作为http请求库

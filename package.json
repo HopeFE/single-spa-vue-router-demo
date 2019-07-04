@@ -1,9 +1,9 @@
 {
   "name": "single-spa-vue-react",
   "version": "1.0.0",
-  "description": "A demo of single spa framework integration of Vue and React",
+  "description": "A demo of single spa framework integration of element-ui and ant-desgin",
   "main": "index.js",
-  "author": "Philisiah Mwaluma",
+  "author": "HOPE",
   "license": "MIT",
   "dependencies": {
     "antd": "^3.20.0",
@@ -53,8 +53,8 @@
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack --config webpack.config.js -p",
+    "start": "webpack-dev-server --open build/webpack.config.js",
+    "build": "webpack --config build/webpack.dev.config.js -p",
     "dll": "webpack --config build/webpack.dll.config.js"
   }
 }

@@ -7,34 +7,19 @@
         text-color="#757c95"
       >
         <el-submenu index="1">
-          <template slot="title">
-            <i class="el-icon-message"></i>APP1
-          </template>
-          <el-menu-item index="1-1">
-            <a @click="goto('app1', 'about')">about</a>
-          </el-menu-item>
-          <el-menu-item index="1-2">
-            <a @click="goto('app1', '')">home</a>
-          </el-menu-item>
+          <template slot="title">Vue1</template>
+          <el-menu-item index="1-1" @click="goto('app1', 'about')">about</el-menu-item>
+          <el-menu-item index="1-2" @click="goto('app1', '')">home</el-menu-item>
         </el-submenu>
         <el-submenu index="2">
-          <template slot="title">
-            <i class="el-icon-message"></i>APP2
-          </template>
-          <el-menu-item index="2-1">
-            <a @click="goto('app2', 'about')">about</a>
-          </el-menu-item>
-          <el-menu-item index="2-2">
-            <a @click="goto('app2', '')">home</a>
-          </el-menu-item>
+          <template slot="title">Vue2</template>
+          <el-menu-item index="2-1" @click="goto('app2', 'about')">about</el-menu-item>
+          <el-menu-item index="2-2" @click="goto('app2', '')">home</el-menu-item>
         </el-submenu>
-
         <el-submenu index="3">
-          <template slot="title">
-            <i class="el-icon-message"></i>react
-          </template>
-          <el-menu-item index="3-1">
-            <a @click="goto('react', '')">about</a>
+          <template slot="title">React</template>
+          <el-menu-item index="3-1" @click="goto('react', '')">
+            ant-design
           </el-menu-item>
         </el-submenu>
       </el-menu>
