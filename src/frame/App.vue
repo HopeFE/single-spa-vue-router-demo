@@ -8,8 +8,9 @@
 </template>
 
 <script>
-import { navigateToUrl } from "single-spa";
+import { navigateToUrl } from "single-spa"
 import Sidebar from "./components/sidebar.vue"
+
 export default {
   name: 'Layout',
   components: { Sidebar },

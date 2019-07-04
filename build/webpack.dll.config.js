@@ -4,7 +4,7 @@ var webpack = require('webpack')
 module.exports = {
   mode: 'production',
   entry: {
-    vendor: ['vue-router', 'vuex', 'vuex-router-sync', 'axios', 'element-ui', 'lodash']
+    vendor: ['axios', 'lodash']
   },
   output: {
     path: path.join(__dirname, '../public/dll'),

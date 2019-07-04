@@ -7,6 +7,15 @@ spa.registerApplication(
 )
 
 spa.registerApplication(
+  // Name of our single-spa application
+  'react',
+  // Our loading function
+  () => import('./src/react/react.app.js'),
+  // Our activity function
+  () => location.pathname.startsWith('/react')
+)
+
+spa.registerApplication(
   'app2',
   () => import('./src/app2/vueapp.app.js'),
   pathPrefix('/app2')
