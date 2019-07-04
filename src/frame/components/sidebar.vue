@@ -8,13 +8,13 @@
       >
         <el-submenu index="1">
           <template slot="title">Vue1</template>
-          <el-menu-item index="1-1" @click="goto('app1', 'about')">about</el-menu-item>
-          <el-menu-item index="1-2" @click="goto('app1', '')">home</el-menu-item>
+          <el-menu-item index="1-2" @click="goto('app1', '')">Welcome</el-menu-item>
+          <el-menu-item index="1-1" @click="goto('app1', 'about')">About</el-menu-item>
         </el-submenu>
         <el-submenu index="2">
           <template slot="title">Vue2</template>
-          <el-menu-item index="2-1" @click="goto('app2', 'about')">about</el-menu-item>
-          <el-menu-item index="2-2" @click="goto('app2', '')">home</el-menu-item>
+          <el-menu-item index="2-1" @click="goto('app2', '')">Element-ui</el-menu-item>
+          <el-menu-item index="2-2" @click="goto('app2', 'about')">about</el-menu-item>
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">React</template>

@@ -1,7 +1,7 @@
 <template>
   <div id="app1">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">内部路由一</router-link> |
+    <router-link to="/about">内部路由二</router-link>
     <router-view/>
   </div>
 </template>
@@ -12,6 +12,6 @@ export default {
 </script>
 <style lang="stylus" scoped>
 #app1
-  display block
+  padding 20px
 </style>
 

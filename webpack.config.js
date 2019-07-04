@@ -3,6 +3,7 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
   mode: 'development',
@@ -79,13 +80,14 @@ module.exports = {
       filename: '[name].min.css',
       allChunks: false
     })
+    // new BundleAnalyzerPlugin()
   ],
   devtool: 'source-map',
   optimization: {
     splitChunks: {
       cacheGroups: {
         vendor1: {
-          test: /[\\/]node_modules[\\/](react|react-dom|react-router-dom|antd)[\\/]/,
+          test: /[\\/]node_modules[\\/](react|react-dom|react-router-dom|@ant-design|antd)[\\/]/,
           name: 'react-common',
           chunks: 'all'
         },

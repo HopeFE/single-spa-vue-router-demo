@@ -1,7 +1,5 @@
 <template>
   <div class="about">
-    <el-row>
-      <el-button type="danger">危险按钮</el-button>
-    </el-row>
+    <h1>This is an about page</h1>
   </div>
 </template>
