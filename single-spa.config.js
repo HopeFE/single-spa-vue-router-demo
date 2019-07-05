@@ -2,7 +2,7 @@ import * as spa from 'single-spa'
 
 spa.registerApplication(
   'app1',
-  () => import('./src/app1/vueapp.app.js'),
+  () => import('./src/app1/src/vueapp.app.js'),
   pathPrefix('/app1')
 )
 
@@ -17,7 +17,7 @@ spa.registerApplication(
 
 spa.registerApplication(
   'app2',
-  () => import('./src/app2/vueapp.app.js'),
+  () => import('./src/app2/src/vueapp.app.js'),
   pathPrefix('/app2')
 )
 

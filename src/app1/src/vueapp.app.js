@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import singleSpaVue from 'single-spa-vue';
+import Vue from 'vue'
+import singleSpaVue from 'single-spa-vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
 function domElementGetter() {
-  return document.getElementById("app1")
+  return document.getElementById('app1')
 }
 const vueLifecycles = singleSpaVue({
   Vue,
@@ -16,7 +16,7 @@ const vueLifecycles = singleSpaVue({
     store,
     render: r => r(App)
   }
-});
-export const bootstrap = [vueLifecycles.bootstrap,];
-export const mount = [vueLifecycles.mount,];
-export const unmount = [vueLifecycles.unmount,];
+})
+export const bootstrap = [vueLifecycles.bootstrap]
+export const mount = [vueLifecycles.mount]
+export const unmount = [vueLifecycles.unmount]
