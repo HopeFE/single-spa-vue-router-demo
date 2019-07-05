@@ -5,13 +5,14 @@
     <router-view/>
   </div>
 </template>
+
 <script>
 export default {
   name: 'HelloWorld'
 }
 </script>
+
 <style lang="stylus" scoped>
 #app1
   padding 20px
 </style>
-

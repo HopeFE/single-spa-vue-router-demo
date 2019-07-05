@@ -14,4 +14,3 @@ export default {
 #app2
   display block
 </style>
-

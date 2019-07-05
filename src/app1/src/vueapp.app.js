@@ -7,6 +7,7 @@ import store from './store'
 function domElementGetter() {
   return document.getElementById('app1')
 }
+
 const vueLifecycles = singleSpaVue({
   Vue,
   domElementGetter,
@@ -17,6 +18,7 @@ const vueLifecycles = singleSpaVue({
     render: r => r(App)
   }
 })
+
 export const bootstrap = [vueLifecycles.bootstrap]
 export const mount = [vueLifecycles.mount]
 export const unmount = [vueLifecycles.unmount]

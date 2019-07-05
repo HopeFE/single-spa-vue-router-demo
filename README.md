@@ -7,7 +7,10 @@
 
 ## 还未解决问题
 1. 同步store
- 
+2. 接口URL配置问题
+3. 路由配置问题
+
+
 ## 使用前必读
 1. 技术栈vue + vue-router + vuex, axios作为http请求库
 2. Vue代码风格参考[style-guide](https://vuefe.cn/v2/style-guide/),JS参考[JavaScript Standard Style](https://standardjs.com/rules-zhcn.html)
@@ -21,4 +24,3 @@
 
 ## TODO
 1. 抽出公共组件
-2. 每个项目可以使用vue-cli3独立运行
