@@ -1,0 +1,51 @@
+{
+  "name": "major-client",
+  "version": "0.1.0",
+  "release": "1.2.59",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve vueapp.app.js",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@afuggini/loadscript": "^0.1.5",
+    "axios": "^0.18.0",
+    "big.js": "^5.2.2",
+    "core-js": "^3.0.1",
+    "cuid": "^2.1.6",
+    "element-ui": "^2.8.2",
+    "jsbarcode": "^3.11.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "vue": "^2.6.10",
+    "vue-grid-layout": "^2.3.4",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.20.0",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "element-ui": "^2.8.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "2.2.0",
+    "lint-staged": "8.1.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack-cli": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
