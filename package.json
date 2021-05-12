@@ -41,7 +41,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
-    "postcss": "^7.0.17",
+    "postcss": "^8.2.10",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
